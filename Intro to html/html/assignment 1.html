@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    User's name:<input type="text" name="user's name" ><br>
+    Email id: <input type="email" name="email id" ><br>
+    password: <input type="password" name="password" required><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female">
+    <label for="female" >Female</label><br>
+    <input type="radio" name="gender" value="other">
+    <label for="other">Other</label><br>
+    <input type="button" value="button" required>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form Layout</title>
+    <style>
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Complex Form Layout</h2>
+
+    <form action="/submit" method="post">
+        <table border="1">
+            <tr>
+                <!-- First row -->
+                <td>
+                    <!-- Nested table for form inputs -->
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <label for="first-name">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="last-name">Last Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country:</label>
+                            </td>
+                            <td>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Unordered list with at least 3 items -->
+                    <ul>
+                        <li>Ensure all fields are filled out.</li>
+                        <li>Choose your country from the dropdown.</li>
+                        <li>Press submit when ready.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <!-- Second row -->
+                <td>
+                    <!-- Textarea for comments -->
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </td>
+                <td style="text-align: center;">
+                    <!-- Submit and reset buttons -->
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align:center;">Complex Form Layout</h2>
+    <form action="/submit" method="post">
+        <table border="1">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="first name">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="last Name">Last Name</label>
+                            </td>
+                            <td>
+                                <input type="text" name="last Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country:</label>
+                            </td>
+                            <td>
+                                <select name="country" id="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="USA">USA</option>
+                                    <option value="London">London</option>
+                                    <option value="UK">UK</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- unordered list with at least three elements -->
+                     <ul>
+                        <li>Ensure all fields are filled out.</li>
+                        <li>Choose your country from the dropdown.</li>
+                        <li>Please submit when ready</li>
+                     </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments" name="comments">Comments</label>
+                    <textarea name="comments" id="comments" required></textarea>
+                </td>
+                <td style="text-align: center;">
+                    <button type="button">Button</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

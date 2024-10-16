@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="" >
+        Name: <input type="text" name="Name" placeholder="Enter your full Name" required /><br>
+        Email: <input type="email" name="email" placeholder="Enter your email address" value="goku@gmail.com" required><br>
+        Phone Number: <input type="number" name="phone number" placeholder="Enter your phone number" maxlength="10" required><br>
+        password: <input type="password" name="password" required><br>
+        Graduation Date: <input name="graduation-date" type="date"/><br>
+        Time of meeting: <input name="meeting-time" type="time">
+        <br><br>
+        Select all of hobbies from option below:
+        <br/>
+        <input type="checkbox" name="hobbies" value="swimming" >Swimming</input><br>
+        <input type="checkbox" name="hobbies" value="coding" >Coding</input><br>
+        <input type="checkbox" name="hobbies" value="Dancing">Dancing</input><br>
+
+        Upload your resume
+        <input type="file" name="resume">
+
+        <br><br>
+        How much do you rate yourself in
+        <input type="range" name="rating" min="0" max="100" step="10"><br>
+        select your birth year
+        <select name="birth-year" id="">
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+        <br><br>
+        <textarea maxlength="200" name="description" id="" rows="3" cols="10" placeholder="Please describe your self"></textarea><br>
+        
+        <br><br>
+        Are you married
+        <input type="radio" value="true">yes</input>
+        <input type="radio" value="false">no</input><br>
+
+        <button type="Submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+</body>
+</html>
